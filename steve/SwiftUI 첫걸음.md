@@ -190,7 +190,6 @@ ___
 지금은 그냥 ObservabaleObject 쓰면 됨!  
 그리고 알 수 있는 거!! ObservableObject는 Combine에서 시작했구나!!  
 
-
 ___
 
 그리고 설명하는 내용은   
@@ -203,4 +202,56 @@ ___
 ___
 
 여기까지가 세션 내용이구
+
+추가로 설명하고 싶은 건  
+
+@State는 value 타입에만 가능하다...?
+
+[What is the @State property wrapper? - a free SwiftUI by Example tutorial (hackingwithswift.com)](https://www.hackingwithswift.com/quick-start/swiftui/what-is-the-state-property-wrapper#:~:text=SwiftUI%20uses%20the%20%40State%20property%20wrapper%20to%20allow,struct%20and%20into%20shared%20storage%20managed%20by%20SwiftUI.)
+
+reference 타입에도 @State 쓸 수 있긴함. 다만 변경사항을 우리의 뷰가 알 수는 없음
+
+특히 ObservableObject 프로토콜 채택하지 않는 class에서 사용할 수 있다네요 (이렇게 쓸일 없음 ㅎㅎ..)
+```swift
+class PostModel {
+    var title: String = "제목 입니다"    
+}
+
+struct PostView: View {
+    @State private var post = PostModel()
+    
+    var body: some View {
+        Text(post.title)
+            .onTapGesture {
+                post.title = "터치 되었습니다"
+                print(post.title)
+            }
+    }
+}
+```
+___
+
+# 근데 iOS 17에서...
+@Observable **매크로**가 나왔어요 
+
+또 바꼈어~!~! 라고 생각할 수 있는데  
+
+<img width="1152" alt="image" src="https://github.com/woozoobro/swiftui-daily-digest/assets/99154211/cae8f216-d133-4e47-a988-b8610a312c01">  
+
+@Observable 붙인 애들은 따로 상태 값 관리하는 프로퍼티 래퍼 없이도
+View가 관측을 함
+
+Swift Data 때문에 이렇게 바뀐 것 같기도... 관계형 DB좀 쉽게 구성할라고 그른가  
+
+<img width="722" alt="image" src="https://github.com/woozoobro/swiftui-daily-digest/assets/99154211/48c58abc-7eed-4619-a09c-03f369c8e8ac">  
+
+17에서 부터 요런 macro가 생겼다는 거 알아두기!  
+
+___
+
+## State랑 Binding 실습
+
+[요거 한번 만들어보면 바로 감을 잡지 않을까 싶습니다!](https://www.youtube.com/watch?v=4s4QAyiYWwc)  
+
+
 
