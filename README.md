@@ -12,9 +12,9 @@ Scrumble은 SwiftUI + Combine + scrum의 합성어 입니다. Scrumble은 SwiftU
 
 
 ### 팀원
-|<img src="https://avatars.githubusercontent.com/u/115457023?v=4" href="https://github.com/youabledev" width="50" height="50"/>||
-|:--:|:--:|
-|[fram](https://github.com/youabledev)||
+|<img src="https://avatars.githubusercontent.com/u/115457023?v=4" href="https://github.com/youabledev" width="50" height="50"/>|<img src="https://avatars.githubusercontent.com/u/77331348?v=4" href="https://github.com/soobin-k" width="50" height="50"/>|<img src="https://avatars.githubusercontent.com/u/99154211?v=4" href="https://github.com/woozoobro" width="50" height="50"/>|<img src="https://avatars.githubusercontent.com/u/92036498?v=4" href="https://github.com/Yoon-hub" width="50" height="50"/>|<img src="https://avatars.githubusercontent.com/u/117285592?v=4" href="https://github.com/parkjawonocu" width="50" height="50"/>|<img src="https://avatars.githubusercontent.com/u/75626237?v=4" href="https://github.com/mingging" width="50" height="50"/>|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|[fram](https://github.com/youabledev)|[초비](https://github.com/soobin-k)|[steve](https://github.com/woozoobro)|[천원](https://github.com/Yoon-hub)|[라쿤맨](https://github.com/parkjawonocu)|[민디고](https://github.com/mingging)|
 <br/>
 
 ### 규칙
