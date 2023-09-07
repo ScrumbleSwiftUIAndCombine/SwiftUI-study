@@ -241,7 +241,7 @@ ___
 @Observable 붙인 애들은 따로 상태 값 관리하는 프로퍼티 래퍼 없이도
 View가 관측을 함
 
-Swift Data 때문에 이렇게 바뀐 것 같기도... 관계형 DB좀 쉽게 구성할라고 그른가  
+Swift Data 때문에 이렇게 바뀐 것 같기도... DB좀 쉽게 구성할라고 그른가  
 
 <img width="722" alt="image" src="https://github.com/woozoobro/swiftui-daily-digest/assets/99154211/48c58abc-7eed-4619-a09c-03f369c8e8ac">  
 
