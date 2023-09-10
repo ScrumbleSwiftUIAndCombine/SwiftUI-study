@@ -18,6 +18,7 @@
 - explicit(명시적인, 뚜렷한) <-> implicit(절대적인, 암시적인)
 
 #### ✅ Explicit identity
+[뷰의 ID를 데이터에 연결하거나 특정 뷰를 참조하는 사용자 지정 식별자를 제공]
 - SwiftUI는 참조가 아닌 값 타입이기 때문에 사용할 수 있는 고유 참조값이 없음. (UIKist은 각 View가 참조값을 가지고 있기 때문에 만일 두 개의 뷰가 동일한 지 확인하려면 참조값을 비교하면 됨)
 
 ~~~Swift
@@ -49,6 +50,7 @@ ScrollViewReader { proxy in
 
 
 #### ✅ Structural Identity
+[뷰 계층 구조 내에서 뷰의 유형과 위치만으로 뷰를 식별하는 방법]
 ``` Swift
 ScrollViewReader { proxy in
   ScrollView {
@@ -89,14 +91,24 @@ some View =
 - View protocol이 ViewBuilder 에 있는 body property를 감싸고, ViewBuilder는 if statement문 안에서 단일 일반 뷰를 생성함
 - var body의 리턴 타입인 some View는 코드가 복잡해지지 않게 하면서도 generic 타입을 사용할 수 있게 해줌. true일 때는 UserInfoView로 false일 때는 NoUserView가 반환된다는 것을 보장함 -> 암시적이고 안정적인 ID를 할당할 수 있게 됨
 ![image](assets/structal_identity_01.png)
-```Swift
-    var body: some View {
-        UserInfoView(userName: .constant(userName ?? "no user"))
-    }
-```
+
 - 각각 다른 고유의 뷰로 인식하기 때문에 둘 사이의 애니메이션이 매끄럽지 못함
 ```Swift
     var body: some View {
         UserInfoView(userName: .constant(userName ?? "no user"))
     }
 ```
+- SwiftUI에서는 이 경우 단일 뷰 (Single View)를 사용하고 modifier나 값으로 전달하는 것을 추천함
+- 조건으로 뷰를 지정했을 때 보다 더 유연한 transition을 제공하며 id를 보존 시킬 수 있음
+- view의 lifetime과 state를 보존할 수 있음
+
+#### ✨ AnyView
+- 되도록 AnyView 사용을 지양함
+- 코드륵 읽거나 이해하기 어렵게 만듬
+- if/else 혹은 Switch를 사용해서 뷰를 쉽게 설정 가능함 (AnyView 말고 기본적으로 제공하는 조건 문 사용해라.)
+- AnyView는 타입에 대한 정보를 숨기기 때문에 컴파일러가 오류를 표시 하지 않을 수 있음
+- 필요하지 않을 때 AnyView를 맹목적으로 사용하게 되면 퍼포먼스 저하됨
+
+> - Makes code harder to understand
+> - Fewer compile-time diagnostics
+> - Worse performance when not needed
