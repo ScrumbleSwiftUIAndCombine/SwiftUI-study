@@ -19,7 +19,7 @@ HStack {
 .padding(30)
 .background(Color.blue)
 ```
-<img  src="https://github.com/mingging/swiftui-daily-digest/blob/main/mindigo/SwfitUI%20fundametal%20Tutorial/assets/%231_1.png?raw=true"  width="450px"  height="300px"  title="px(픽셀) 크기 설정"></img><br/>
+<img  src="https://github.com/mingging/swiftui-daily-digest/blob/main/mindigo/SwfitUI%20fundametal%20Tutorial/assets/%231_1.png?raw=true"  width="450px"  height="300px"  title=""></img><br/>
 
 이렇듯 속성의 순서 또한 SwiftUI에서는 중요한 요소 중 하나다!
 
@@ -65,7 +65,7 @@ if isActivated {
 ❗ 말 그대로 무한대를 의미하며 `maxWidth: .infinity` 라는 말은 곧 `width`의 무한 영역까지 넓히겠다는 의미로 받아들이면 될 것 같다.
 
 <br>
----
+<hr>
 
 ### 🌿 오늘의 민트 주간
 #### 🌳 Xcode에서 맞춤법 검사 방법
@@ -74,14 +74,15 @@ if isActivated {
 #### 오타를 찾아보자
 현재 열려있는 파일에서 cmd + ; 를 누르면 오타로 의심되는 위치에 포커스를 띄워준다.
 한번 더 누르게 되면 다음 오타로 의심되는 부분으로 포커스가 이동한다.
-(이미지)
+<img  src="https://github.com/mingging/swiftui-daily-digest/blob/main/mindigo/SwfitUI%20fundametal%20Tutorial/assets/mint_1.png" title=""></img><br/>
 
 
 #### 오타를 수정해보자
 해당 포커스에서 control + 오른쪽 마우스 클릭을 하면 추천 단어들이 뜨게 된다.
 그 중에서 원하는 단어를 누르면 해당 단어로 바뀌게 된다.
-(이미지)
+<img  src="https://github.com/mingging/swiftui-daily-digest/blob/main/mindigo/SwfitUI%20fundametal%20Tutorial/assets/mint_2.png" title=""></img><br/>
 
+<br>
 
 #### 🌳 Xcode 단락 묶기
 출처 : 카카오톡 오픈 채팅방
@@ -91,6 +92,6 @@ if isActivated {
 설정 방법은 엄청 간단하다
 Xcode -> Setting -> Text Editing 에 가면 Code folding ribbon 이라는 항목이 있다.
 해당 항목을 선택할 경우 아래와 같은 폴딩을 할 수 있는 버튼이 나타나게 된다.
-(이미지)
+<img  src="https://github.com/mingging/swiftui-daily-digest/blob/main/mindigo/SwfitUI%20fundametal%20Tutorial/assets/mint_3.png" title=""></img><br/>
 
 해당 줄? 에 마우스를 올리면, 어디서 어디까지가 단락인지 알 수 있으며 손 쉽게 단락을 닫을 수 있다!
