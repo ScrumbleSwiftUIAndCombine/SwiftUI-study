@@ -48,9 +48,9 @@ Text("안녕하세요").background(isActivated ? Color.red : Color.yellow)
 
 ```swift
 if isActivated {
-	return  Text("안녕하세요").background(Color.red)
+    return  Text("안녕하세요").background(Color.red)
 } else {
-	return  Text("안녕하세요").background(Color.yellow)
+    return  Text("안녕하세요").background(Color.yellow)
 }
 ```
 
@@ -74,12 +74,14 @@ if isActivated {
 #### 오타를 찾아보자
 현재 열려있는 파일에서 cmd + ; 를 누르면 오타로 의심되는 위치에 포커스를 띄워준다.
 한번 더 누르게 되면 다음 오타로 의심되는 부분으로 포커스가 이동한다.
+
 <img src="https://github.com/mingging/swiftui-daily-digest/blob/main/mindigo/SwfitUI%20fundametal%20Tutorial/assets/mint_1.png?raw=true" title=""></img><br/>
 
 
 #### 오타를 수정해보자
 해당 포커스에서 control + 오른쪽 마우스 클릭을 하면 추천 단어들이 뜨게 된다.
 그 중에서 원하는 단어를 누르면 해당 단어로 바뀌게 된다.
+
 <img src="https://github.com/mingging/swiftui-daily-digest/blob/main/mindigo/SwfitUI%20fundametal%20Tutorial/assets/mint_2.png?raw=true" title=""></img><br/>
 
 <br>
@@ -92,6 +94,7 @@ if isActivated {
 설정 방법은 엄청 간단하다
 Xcode -> Setting -> Text Editing 에 가면 Code folding ribbon 이라는 항목이 있다.
 해당 항목을 선택할 경우 아래와 같은 폴딩을 할 수 있는 버튼이 나타나게 된다.
+해당 줄? 에 마우스를 올리면, 어디서 어디까지가 단락인지 알 수 있으며 손 쉽게 단락을 닫을 수 있다!
+
 <img src="https://github.com/mingging/swiftui-daily-digest/blob/main/mindigo/SwfitUI%20fundametal%20Tutorial/assets/mint_3.png?raw=true" title=""></img><br/>
 
-해당 줄? 에 마우스를 올리면, 어디서 어디까지가 단락인지 알 수 있으며 손 쉽게 단락을 닫을 수 있다!
