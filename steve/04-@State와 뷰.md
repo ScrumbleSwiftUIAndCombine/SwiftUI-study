@@ -149,4 +149,64 @@ struct ExtractSubviewBootcamp: View {
     }
 }
 ```
-요렇게!  
+요렇게!
+
+
+___
+# @Binding
+
+부모뷰랑 child View가 있다고 해봅시다  
+
+부모뷰에 선언된 프로퍼티를 child View는 알 수가 없음  
+프로퍼티의 스코프는 선언된 곳에 한정되니까  
+
+새로 변수를 파서 값을 전달해줘도 되겠지만 그럼 여러개의 상태들을 계속해서 만들어주고 값도 전달해줘야해요  
+
+이럴 때 @Binding 프로퍼티 래퍼를 사용하면 부모뷰가 가진 [@State로 선언된] 프로퍼티를  
+말 그대로 바인딩 해줄 수 있습니다.  
+
+그리고 부모뷰에서 자식뷰를 호출하게 되었을 때 $ 사인을 붙여서 값을 넘겨주면 됩니다  
+
+```swift
+struct BindingBootcamp: View {
+    
+    @State var backgroundColor: Color = .green
+    @State var title: String = "Title"
+    
+    var body: some View {
+        ZStack {
+            backgroundColor
+                .ignoresSafeArea()
+            VStack {
+                Text(title)
+                    .foregroundColor(.white)
+                ButtonView(backgroundColor: $backgroundColor, title: $title)
+            }
+        }
+    }
+}
+
+struct ButtonView: View {
+    @Binding var backgroundColor: Color
+    @State var buttonColor: Color = .blue
+    @Binding var title: String
+    var body: some View {
+        Button {
+            backgroundColor = .orange
+            buttonColor = .pink
+            title = "New Title!"
+        } label: {
+            Text("Button")
+                .foregroundColor(.white)
+                .padding()
+                .padding(.horizontal)
+                .background(buttonColor)
+                .cornerRadius(10)
+        }
+    }
+}
+```
+
+### Preview에는 .constant로 값이 들어가야하구요!
+
+
