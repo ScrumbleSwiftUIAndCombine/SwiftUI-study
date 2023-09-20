@@ -90,7 +90,7 @@ some View =
 - SwiftUI 의 result builder인 ViewBuilder에 의해 if statement는 _ConfitionalContent로 변경됨
 - View protocol이 ViewBuilder 에 있는 body property를 감싸고, ViewBuilder는 if statement문 안에서 단일 일반 뷰를 생성함
 - var body의 리턴 타입인 some View는 코드가 복잡해지지 않게 하면서도 generic 타입을 사용할 수 있게 해줌. true일 때는 UserInfoView로 false일 때는 NoUserView가 반환된다는 것을 보장함 -> 암시적이고 안정적인 ID를 할당할 수 있게 됨
-![image](assets/structal_identity_01.png)
+![image](../assets/structal_identity_01.png)
 
 - 각각 다른 고유의 뷰로 인식하기 때문에 둘 사이의 애니메이션이 매끄럽지 못함
 ```Swift
@@ -116,18 +116,18 @@ some View =
 ----
 
 ### ⏰ LifeTime
-![image](assets/demysty_swiftui_lifetime_01.png)
+![image](../assets/demysty_swiftui_lifetime_01.png)
 - 동일한 고양이이지만 시간이 흐름에 따라 고양이는 움직여 위치를 바꾸고 졸거나 울거나 밥을 먹는 등의 변화가 나타난다. 하지만 동일한 고양이라는 것은 변함없음
 - 위와 마찬가지로 lifetime 동안 동일한 View가 상태와 위치를 바꾸게 됨
 - identity를 사용하면 시간이 지남에 따라 다양한 값에 대해 stable element를 정의할 수 있음
-![image](assets/demysty_swiftui_lifetime_02.png)
+![image](../assets/demysty_swiftui_lifetime_02.png)
 - View가 화면에 나타나면 SwiftUI는 identity를 할당함. 이후 View의 값의 변화가 있더라도 SwiftUI는 같은 뷰로 인식함. 
 > view value != view identity
 - view 의 value는 lifetime 동안 값이 변화하기 때문에 view의 고유값이라고 생각하면 안됨
 - 뷰의 수명 == 해당 뷰와 연결된 ID의 지속 시간을 의미함
 > A view's lifetime is the duration of the identity.
 - identity는 상태 지속성에도 영향을 미침
-![image](assets/demysty_swiftui_lifetime_03.png)
+![image](../assets/demysty_swiftui_lifetime_03.png)
 - ID가 변경될때마타 상태도 변경됨
 - if/else statement에서 각 뷰는 같은 타입이지만 다른 id를 가짐(view identity 참조). true에 의해 새로운 뷰가 생성되면 view state가 초기화 됨. 이때 false가 되면 다시 새로운 state가 할당되고 이전 state를 제거하게 됨
 - the persistence of state - the lifetime of views
@@ -180,16 +180,16 @@ extension ForEach
 
 ### 🔗 Dependency
 [SwiftUI가 뷰를 업데이트 하는 방법]
-![image](assets/demysty_swiftui_dependency_01.png)
+![image](../assets/demysty_swiftui_dependency_01.png)
 - Dependency는 뷰 내부에서 정의되며 이 값이 변경되면 새로운 body를 그리게됨
-![image](assets/demysty_swiftui_dependency_02.png)
+![image](../assets/demysty_swiftui_dependency_02.png)
 - dependency 값이 변경되면 이와 관련있는 뷰를 업데이트 하게 됨
 - 이는 트리 구조로 나타낼 수 있으며 사용자의 인터렉션을 받아 뷰를 업데이트 하는 것을 도식화 함
-![image](assets/demysty_swiftui_dependency_03.png)
+![image](../assets/demysty_swiftui_dependency_03.png)
 - SwiftUI의 View에는 많은 SubView가 존재하고 각각의 SubView는 각각의 dependency를 가지므로 사실상 트리가 아니라 그래프의 구조를 가지게 됨
-![image](assets/demysty_swiftui_dependency_04.png)
+![image](../assets/demysty_swiftui_dependency_04.png)
 - dependency 값이 변경되면 이와 연결된 뷰의 body 변수는 업데이트 되게 됨
-![image](assets/demysty_swiftui_dependency_05.png)
+![image](../assets/demysty_swiftui_dependency_05.png)
 - 업데이트된 뷰와 연결되어있는 subview가 언제나 함께 업데이트 되는 것이 아님. SwiftUI는 값 타입이고 dependency랑 관련 있는 뷰가 업데이트 되게 됨
 - 그렇기 때문에 뷰의 값은 수명이 짧고 단지 이전 뷰와 비교하는데 사용되며 새로운 뷰가 그려지면 즉시 파괴됨
 - dependency 그래프에서 중요한 것은 ID (explicitly or structurally). 모든 뷰는 ID를 가지고 있으며 이 아이디는 올바른 뷰로 라우팅하고 효율적으로 업데이트 할 수 있게 해줌
