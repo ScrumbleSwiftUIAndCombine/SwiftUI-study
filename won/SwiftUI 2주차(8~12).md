@@ -125,7 +125,7 @@ struct MyListView: View {
 - 여기서 `appearance`란? UI 컴포넌트의 전역적인 스타일 및 속성을 설정하기 위한 기능입니다.
     - ex) UIAppearance, UITabBarAppearance, UINavigationBarAppearance
 
-![스크린샷 2023-09-19 오후 9.22.18.png](SwiftUI%202%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1(8~12)%20acfecbd58d9e40a39e46952e3ba6b034/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-09-19_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_9.22.18.png)
+<img width="331" alt="1" src="https://github.com/Yoon-hub/SwiftUITutorialProject/assets/92036498/1a088a9f-931d-4bff-8b6e-c2cce3a7c482">
 
 - 적용이 안되는데.. 그냥 modifier 사용하자
 
@@ -219,7 +219,7 @@ struct MyGeometryReader: View {
 
 ## Opaque type
 
-![스크린샷 2023-09-20 오후 7.20.07.png](SwiftUI%202%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1(8~12)%20acfecbd58d9e40a39e46952e3ba6b034/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-09-20_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_7.20.07.png)
+<img width="649" alt="3" src="https://github.com/Yoon-hub/SwiftUITutorialProject/assets/92036498/1b4ce4f3-eb51-424e-a686-48a64e157679">
 
 ```jsx
 struct Stack<Element> {
@@ -245,7 +245,7 @@ func makeArray() -> some Collection {
 }
 ```
 
-![img.png](SwiftUI%202%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1(8~12)%20acfecbd58d9e40a39e46952e3ba6b034/img.png)
+<img width="341" alt="2" src="https://github.com/Yoon-hub/SwiftUITutorialProject/assets/92036498/71c86f28-bb4b-423e-b19b-ad61e5e6d272">
 
 ```jsx
 protocol TestProtocol {}
