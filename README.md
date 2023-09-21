@@ -46,7 +46,9 @@ Scrumble은 SwiftUI + Combine + scrum의 합성어 입니다. Scrumble은 SwiftU
 
 ----------
 ## ✨ 진행 사항
-|일시|회차|학습내용|
-|:--|:--|:--|
-|23.09.07|1회차|OT 진행|
-|23.09.13|2회차|강의 ~ #7까지 수강|
+|일시|회차|학습내용|세션|
+|:--|:--:|:--|:--|
+|23.09.07|1회차||OT 진행|
+|23.09.13|2회차|강의 ~ #7까지 수강|- fram : [Demisty SwiftUI](https://github.com/ScrumbleSwiftUIAndCombine/swiftui-daily-digest/blob/main/fram/wwdc/DemystifySwiftUI.md) </br>- 초비 : [UIHostingController](https://github.com/ScrumbleSwiftUIAndCombine/swiftui-daily-digest/blob/main/chobi/2%ED%9A%8C%EC%B0%A8/2%ED%9A%8C%EC%B0%A8%20%EC%84%B8%EC%85%98.md) </br>- steve : [SwiftUI 첫걸음](https://github.com/ScrumbleSwiftUIAndCombine/swiftui-daily-digest/blob/main/steve/WWDC%EC%84%B8%EC%85%98/SwiftUI%20%EC%B2%AB%EA%B1%B8%EC%9D%8C.md), [State와 Binding](https://www.youtube.com/watch?v=4s4QAyiYWwc) </br>- 천원 : [Main과 App, 강의 정리](https://github.com/ScrumbleSwiftUIAndCombine/swiftui-daily-digest/blob/main/won/SwiftUI%201%EC%A3%BC%EC%B0%A8(1~7).md) </br>- 민디고 : [padding, frame modifier와 Xcode tips](https://github.com/ScrumbleSwiftUIAndCombine/swiftui-daily-digest/blob/main/mindigo/SwfitUI%20fundametal%20Tutorial/%EB%8F%84%EC%8B%9C/session-2-share.md) </br>|
+|23.09.20 예정|3회차|강의 ~ #12까지 수강||
+|23.09.27 예정|4회차|강의 ~ #20까지 수강||
