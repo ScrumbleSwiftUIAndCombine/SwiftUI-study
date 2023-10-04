@@ -207,10 +207,6 @@ https://velog.io/@bibi6666667/TDD-%EB%8B%A8%EC%9C%84-%ED%85%8C%EC%8A%A4%ED%8A%B8
 https://zeddios.tistory.com/1061
 https://velog.io/@chagmn/Swift-XCTest-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-Test-Assertion
 
-<br>
-
-### 🤟 세번째
-> 유닛 테스트에 대해 알아보자
 
 
 <br>

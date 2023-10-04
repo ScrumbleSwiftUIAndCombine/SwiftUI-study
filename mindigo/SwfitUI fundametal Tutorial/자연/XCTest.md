@@ -24,18 +24,56 @@ https://velog.io/@bibi6666667/TDD-%EB%8B%A8%EC%9C%84-%ED%85%8C%EC%8A%A4%ED%8A%B8
 
 
 ### 🖖 네번째
-> UI 테스트에 대해 알아보자
+
+> UI 테스트에 대해 알아보자
 
 위에서 이제 유닛 테스트에 대해 알아보았으니, 이번에는 UI 테스트에 대해서 알아보도록 해보자
 
-** UITest 란? **
+**UITest 란?**
 User Interface Testing 이라는 뜻이다. 프레임워크를 사용하여 애플리케이션의 UI 요소를 자동화하여 UI 테스트를 실행할 수 있도록 해준다.
 
 UITest의 장점은
+
  - 테스트 시작점이 빠르다.
  - 내부의 리소스 사용이 가능하다.
 
 라는 장점들이 있다.
+
+UI Test의 기본 구조는 다음과 같다.
+
+```swift
+final class projectUITests: XCTestCase {
+  var app = XCUIApplication!
+  
+  override func setUp() {
+    super.setUp()
+    // 앱 실행
+    app = XCUIApplication()
+    app.launch()
+	}
+  
+  override func tearDown() {
+    super.tearDown()
+    // 활성화된 앱을 종료
+    app.terminate()
+	}
+  
+  func testIntroActivity() {
+    // 인트로 테스트를 정의
+  }
+}
+```
+
+테스트 케이스의 검증은 다음과 같이 구현한다.
+
+```swift
+// 텍스트 필드에 값이 "Hello, World!" 가 맞는지 테스트
+XCTAssertEqual(textField.value as? String, "Hello, World!")
+
+// accessibilityidentifier가 "...." 인 버튼이 선택되어 있는지 테스트 
+XCTAssertFalse(app.buttons["...."].isSelected)
+```
+
 
  
 참고한 출처들
