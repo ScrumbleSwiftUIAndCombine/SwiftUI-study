@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390404D52AD5D3DE003B60AC /* MyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390404D42AD5D3DE003B60AC /* MyViewModel.swift */; };
 		39F331EB2ACD1343000982D0 /* SwiftUI_Redux_tutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F331EA2ACD1343000982D0 /* SwiftUI_Redux_tutorialApp.swift */; };
 		39F331ED2ACD1343000982D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F331EC2ACD1343000982D0 /* ContentView.swift */; };
 		39F331EF2ACD1344000982D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39F331EE2ACD1344000982D0 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		390404D42AD5D3DE003B60AC /* MyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewModel.swift; sourceTree = "<group>"; };
 		39F331E72ACD1343000982D0 /* SwiftUI_Redux_tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Redux_tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F331EA2ACD1343000982D0 /* SwiftUI_Redux_tutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Redux_tutorialApp.swift; sourceTree = "<group>"; };
 		39F331EC2ACD1343000982D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				39F331FA2ACD155E000982D0 /* MyButtonStyle.swift */,
 				39F332002ACD29A0000982D0 /* Reducer.swift */,
 				39F332022ACD2CD7000982D0 /* AppStore.swift */,
+				390404D42AD5D3DE003B60AC /* MyViewModel.swift */,
 			);
 			path = SwiftUI_Redux_tutorial;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			files = (
 				39F331ED2ACD1343000982D0 /* ContentView.swift in Sources */,
 				39F331FF2ACD1810000982D0 /* AppAction.swift in Sources */,
+				390404D52AD5D3DE003B60AC /* MyViewModel.swift in Sources */,
 				39F331FD2ACD1767000982D0 /* AppState.swift in Sources */,
 				39F331FB2ACD155E000982D0 /* MyButtonStyle.swift in Sources */,
 				39F332012ACD29A0000982D0 /* Reducer.swift in Sources */,
