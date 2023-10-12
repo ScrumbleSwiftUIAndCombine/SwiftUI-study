@@ -1,0 +1,10 @@
+{
+    "aps": {
+        "alert": {
+            "title": "시뮬레이터로 Push Notification 보내기",
+            "body": "apns 파일로 간단하게"
+        },
+        "badge": 5
+    },
+    "Simulator Target Bundle": "com.personal.push-test"
+}
