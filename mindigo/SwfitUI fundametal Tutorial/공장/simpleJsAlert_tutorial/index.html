@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹뷰</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('send').onclick = function(e) {
+                let input = document.getElementById('name')
+                alert(input.value);
+                input.value = ""
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
