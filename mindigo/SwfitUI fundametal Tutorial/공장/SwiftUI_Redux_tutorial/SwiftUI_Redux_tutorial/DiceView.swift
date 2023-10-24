@@ -31,7 +31,6 @@ struct DiceView: View {
                 .font(.system(size: 300, weight: .bold, design: .monospaced))
                 .rotationEffect(.degrees(shouldRoll ? 360 : 0))
                 .animation(diceRollAnimation, value: shouldRoll)
-                .animation(diceRollAnimation)
             Button {
                 self.rollTheDice()
             } label: {
@@ -45,8 +44,8 @@ struct DiceView: View {
                     self.pressed = pressed
                 }
             }
-
         }
+       
     }
 }
 
