@@ -2,11 +2,12 @@
 
 - 책 있는데 필요하다면 공유 가능합니당
 
+### #이모저모
+[Xcode15 바이너리 업로드 에러](https://mindego.tistory.com/25)
+
 
 **SwiftUI로 리액션 이모지 만들기**
 - 재미있어보여서 공유합니다! 저희가 다 배웠던 내용들 가지고 만들더라구요
-[SwiftUI Tutorial: Emotional Reaction With Animation](https://www.youtube.com/watch?app=desktop&v=x65oSbGnT9Q)
-
 
 
 **물론 회바회이긴 하지만 요즘 회사들은 노션으로 쓴 포트폴리오를 별로 좋아하지 않는대요!**
